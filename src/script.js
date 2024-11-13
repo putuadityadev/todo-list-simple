@@ -20,7 +20,7 @@ function addTaskToList(taskValue) {
     taskList.className = 'flex items-center gap-3';
 
     taskList.innerHTML = `
-        <img src="/dist/img/unchecked.png" alt="" class="h-5">
+        <img src="dist/img/unchecked.png" alt="" class="h-5">
         <p>${taskValue}</p>
         <button class="delete-button ml-auto">x</button>
     `
@@ -39,8 +39,8 @@ function addTaskToList(taskValue) {
 
         paragraph.classList.toggle('task-completed');
         image.src = paragraph.classList.contains('task-completed')
-            ? '/dist/img/checked.png'
-            : '/dist/img/unchecked.png'
+            ? 'dist/img/checked.png'
+            : 'dist/img/unchecked.png'
         
         paragraph.classList.contains('task-completed')
             ? paragraph.classList.add('line-through')
